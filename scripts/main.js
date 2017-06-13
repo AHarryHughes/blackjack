@@ -28,7 +28,7 @@ function handValue (hand) {
     }
   }
   if (handString.match(/[A]/)!=null) {
-    while(handString.match(/[A]/).length>0 && totalValue>21){
+    while(handString.match(/[A]/).length>count && totalValue>21){
       totalValue -= 10;
       count++;
     }
